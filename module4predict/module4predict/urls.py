@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from ais_data.views import *
+
 urlpatterns = [
-    path('get_modules/', admin.site.urls),
+    path('get_modules/', show_aisline),
+    path('predict/', predict),
 ]

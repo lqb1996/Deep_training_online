@@ -1,3 +1,15 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import *
+
+
+@admin.register(Aisline)
+class AislineAdmin(admin.ModelAdmin):
+    list_display = ()
+    fields = ()
+
+
+@admin.register(Test)
+class TestAdmin(admin.ModelAdmin):
+    list_display = ()
+    fields = ()
